@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ubermelon Order Form </title>
+</head>
+
+<body>
+    <h1>Order!</h1>
+    <table>
+        <thead>
+            <tr><th>Prices</th></tr>
+            <tr>
+                <td>Melon Name</td>
+                <td>Price per lb.</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Watermelon</td>
+                <td>$1.59</td>
+            </tr>
+            <tr>
+                <td>Honeydew</td>
+                <td>$0.99</td>
+            </tr>
+            <tr>
+                <td>Canteloupe</td>
+                <td>$1.29</td>
+            </tr>
+            <tr>
+                <td>Crenshaw</td>
+                <td>$2.19</td>
+            </tr>
+            <tr>
+                <td>Canary</td>
+                <td>$11.99</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Place your orders here! You know you want to.</p>
+    <form action="https://ubermelon-order-form.herokuapp.com/process">
+        <label>First Name<input type="text" name="firstname"></label><br>
+        <label>Last Name<input type="text" name="lastname"></label><br>
+        <label>Melon Type
+            <select name="melontype">
+                <option value="watermelon">Watermelon</option>
+                <option value="honeydew">Honeydew</option>
+                <option value="canteloupe">Canteloupe</option>
+                <option value="crenshaw">Crenshaw</option>
+                <option value="canary">Canary</option>
+            </select>
+        </label><br>
+        <label>Quantity*<input type="text" name="quantity"></label><br>
+        <h2>Delivery Time</h2>
+        <label>
+            <input type="radio" name="time" value="am">12:00am-12:00pm
+            <input type="radio" name="time" value="pm">12:00pm-12:00am
+            <input type="radio" name="time" value="wat">Time is an illusion
+        </label><br>
+        <h2>Returning Customer?</h2>
+        <label>
+            <input type="radio" name="returning" value="yes">Yes
+            <input type="radio" name="returning" value="no">No
+        </label><br>
+        <h2>For statistical purposes</h2>
+        <label>
+            <input type="checkbox" name="stats" value="dog">Dog
+            <input type="checkbox" name="stats" value="cat">Cat
+            <input type="checkbox" name="stats" value="hedgehog">Hedgehog
+            <input type="checkbox" name="stats" value="balloonicorn">Balloonicorn
+            <input type="checkbox" name="stats" value="yak">Yak
+        </label><br>
+        <label>Choose Color <input type="color" name="favcolor"></label><br>
+        <label>When is your birthday?<input type="month" name="birthday"></label><br>
+        <label>What is your phone number?<input type="tel" name="telnum"></label><br>
+        <label>Send us your file!<input type="file" name="yourfile"></label><br>
+    <p>Click on the balloonicorn to submit the form.</p>
+    <input type="image" src="http://cdn.destructoid.com//ul/253181-Balloonicorn%20Header-PNG.jpg">
+    </form>
+    <footer>
+        *Quantities given are by the flat.
+    </footer>
+</body>
+</html>
+
+<!-- play with web developer extension -->
+<!-- mdn other input types -->
